@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="code.js"></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+ <body>
+  <div class="container1">
+<header class="headerwrapper">
+  <img class="headerpic" src="puplogo.png" alt="website logo">
+  <div class="headertext">
+    <h1>Pampered Pups</h1>
+    <h3>Doggie Salon & Kennel</h3>
+  </div>
+</header>
+    <nav id="flex-nav">
+<a href="#" class="toggleNav">&#9776; Menu</a> <!--This will only be visible less than 480px wide-->
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="salon.html">Clip-n-fluff</a></li>
+        <li><a href="kennel.html">Stay-n-play</a></li>
+        <li><a href="shop.html">Bark-ery</a></li>
+        <li><a href="gallery.html">Mutt Shots</a></li>
+        <li><a href="contact.html">Contact</a></li>
+       </ul>
+    </nav>
+    <main>
+        <h2>Contact Us!</h2>
+        <p>Use this from to schedule your pup an appoitment at Pampered Pups!</P>
+      
+        <form class="nestedgrid2" action="https://formspree.io/traceryan144@gmail.com" method="POST" >
+        <div class="div1">
+      
+Name*
+<br>
+<input type="text" size="30" placeholder="" autofocus required name="fullname" aria-label="name">
+<br>
+ Email*<br><input type="email" size="30" required name="email" aria-label="email"><br>
+Phone*<br><input type="tel" size="30" placeholder="(000)000-0000" required name ="phone" aria-label="phone"><br>
+</div>
+<div class="div2">
+Type of dog<br><input type="text" size="30" list="dogs"aria-label="dogg"><br>
+<datalist id="dogs">
+  <option value="Golden Retriever">
+  <option value="Beagle">
+  <option value="Bulldog">
+  <option value="Lab">
+  <option value="Chihuahua">
+  <option vlaue="Other">
+</datalist>
+Date to visit<br><input type="date" size="30" required name="date"><br>
+Number of dogs you have<br><input type="number" size="30" placeholder="1" required name="days"aria-label="days"><br>
+<input type= "submit" value="Schedule my pup!!!" class="button">
+</div>
+
+
+</form>
+<div class="call">
+  <b>Or Contact Us</b><br>
+  Email:feedback@pamperedpups.com<br>
+  Phone:888-555-PAMP<br>
+  Fax:888-555-Pups<br>
+  Mail:Pampered Pups, Inc.
+  408 Pickford Drive Pembroke Pines, FL 33026
+  
+</div>
+    </main>
+    <footer>
+        <p>&copy; Test Prep Pros</p>
+        <p>3737 North Street</p>
+        <p>Beaverbrook, OH 45400 </p>
+    </footer>
+  </div>
+</body>
+</html>

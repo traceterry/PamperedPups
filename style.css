@@ -1,0 +1,473 @@
+img{
+    max-width:100%; /*keep this in case you add pictures*/
+}
+
+body {
+  font-family: Verdana;
+  background: linear-gradient(to right, #00008B, #00008b);
+  margin:0;
+  padding:0;
+}
+
+header, nav, main, footer, aside, article {
+   border-radius:5px;
+}
+
+header {
+    grid-area:header;
+    background:#FFFFFF;
+    text-align:center;
+}
+
+.headerpic {
+    grid-area:headerpic;
+    padding:5px;
+    height:10vmax;
+    }
+
+.headertext {
+    grid-area:headertext;
+    text-align:center;
+    }
+    
+.headerwrapper {
+    display:grid;
+    justify-items: center;
+    align-items:center;
+    grid-template-columns:25% auto;
+    grid-template-areas:
+    "headerpic headertext"
+    }
+
+header h1 {
+     font-size:5vw;
+     color:#bf212e;
+     font-family:Verdana;
+     text-shadow: 2px 2px 5px #B22222;
+     margin: 0;
+}
+
+header h3 {
+    font-size:3vw;
+    color:#bf212e;
+    margin:0;
+}
+
+
+main {
+    grid-area:main;
+    background:#ffff99;
+    color:#0e5073;
+    padding:5px;
+    }
+
+main h2 {
+    text-align:center;
+    margin:1%;
+}
+
+main h4 {
+  color:red;
+}
+
+main p {
+    color:#000000;
+    padding:1% 2%;
+    font-size:1em;
+}
+
+main a {
+ color:navy;
+}
+
+
+ 
+nav {
+    grid-area:nav;
+    background:#ADD8E6;
+    }
+
+nav li {
+    padding:10px 10px;
+    list-style-type:none;
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+nav a {
+    text-decoration:none;
+    color:#0e5073;
+}
+nav a:hover {
+    text-shadow: 2px 2px 5px #3217ff;
+}
+.top{
+   grid-area:top;
+}
+.middle {
+  grid-area:middle;
+}
+.bottom {
+  grid-area:bottom;
+}
+section {
+  grid-area:section;
+}
+.fig1 {
+  grid-area:fig1;
+}
+.fig2 {
+  grid-area:fig2;
+  background-color:#ffffff;
+}
+article {
+  background-color:#0000b0;
+  color:#ffffff;
+  text-align:center;
+}
+
+
+audio {
+ max-width: 100%;
+}
+video {
+  max-width:  100%;
+  height:auto;
+}
+
+.video, .audio {
+    margin:0;
+    display: grid;  /*This needs to be set or it won't center*/
+    justify-content:space-around;
+}
+
+
+footer {
+    grid-area:footer;
+    background:#9acd32;
+    padding:5px;
+    text-align:center;
+    }
+
+footer p {
+     font-size:1em;
+     color:#ffffff;
+     margin:0;
+}
+
+figure {
+  margin:0;
+  text-align:center;
+}
+
+figcaption {
+  padding:5px;
+  color:#0000b0;
+  font-weight:bold;
+}
+
+figure img {
+  margin-top:16px;
+  max-width:20em;
+  border: 2px solid #0000b0;
+}
+
+form {
+    background:linear-gradient(to bottom, #ADD8E6, #ffffff);
+    width:90%;
+    margin:auto;
+    color:black;
+    padding:10px;
+}
+
+
+
+input {
+  margin: 1px 0 10px 0;
+}
+
+.button {
+  padding:5px;
+  background-color:#a4c4fe;
+  color:black;
+}
+
+.call{
+    color:#0e5073;
+    border-radius:5px;
+    text-align:center;
+    font-size:1.5em;
+    background-color:#ffcccb;
+    width:60%;
+    padding: 5px;
+    margin:10px auto 0 auto;
+}
+.homeA {
+  grid-area:homeA;
+  font-size:1.35em;
+}
+.homeB {
+  grid-area:homeB;
+  font-size:1em;
+  background: linear-gradient(to bottom, #fed8b1, #FFFFFF);
+  text-align:center;
+}
+
+.homeC {
+  grid-area:homeC;
+  font-size:1em;
+  background: linear-gradient(to bottom, #90ee90, #FFFFFF);
+  text-align:center;
+}
+.homeD {
+  grid-area:homeD;
+  font-size:1em;
+  background: linear-gradient(to bottom, #fed8b1, #FFFFFF);
+  text-align:center;
+}
+
+
+/*---------------------------Mobile Layout----------------------------*/
+.container1 { /*for later index.html*/
+  display: grid;
+  grid-template-columns:1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+    }
+    
+    .container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "footer";
+    }
+    
+   .container3 { /*for blog.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "top"
+    "middle"
+    "bottom"
+    "footer";
+}
+
+.container4 {
+  display:grid;
+  grid-gap:.5em;
+grid-template-columns:auto 1fr;
+grid-template-areas:
+"header"
+"nav"
+"main"
+"fig2"
+"footer"
+}
+
+.nestedgrid{
+display:grid;
+grid-template-columns:100%;
+grid-template-areas:
+"section"
+"fig1";
+}
+
+.nestedgrid2{
+  display:grid;
+grid-template-columns:100%;
+grid-template-areas:
+"div1"
+"div2";
+}
+.homegrid {
+  display:grid;
+  grid-template-columns:1fr;
+  grid-template-areas:
+  "homeA"
+  "homeB"
+  "homeC"
+  "homeD";
+}
+/*This stuff is for the hamburger menu*/
+.toggleNav {
+    display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
+    text-align:center;
+    font-size:1.5em;
+    font-weight:bold;
+    padding:10px;
+    }
+
+#flex-nav ul {
+    display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+ 
+#flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
+    display:grid;
+    }
+    
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+    }
+
+
+/*-----------------------Tablet Media Query------------------------*/
+@media only screen and (min-width: 480px)  {
+.container1 { /*for index.html*/
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+    
+    .container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav aside"
+    "main main"
+    "footer footer";
+    }
+
+.container3 { /*for index.html*/
+  display: grid;
+  grid-template-columns:auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "top top"
+    "middle middle"
+    "bottom bottom"
+    "footer footer";
+    }
+    
+.container4 {
+display:grid;
+grid-template-columns:auto 1fr;
+grid-template-areas:
+"header header"
+"nav main"
+"fig2 fig2"
+"footer footer";
+}
+
+.nestedgrid{
+display:grid;
+grid-template-columns:100%;
+grid-template-areas:
+"section"
+"fig1";
+}
+
+
+
+
+/* Below will change from hamburger menu to side navigation*/
+  
+.toggleNav {
+    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+  
+#flex-nav ul {
+    display:grid;
+    text-align:left;
+  }
+
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+  }
+
+	}
+
+/*-----------------------Desktop Media Query------------------------*/
+@media only screen and (min-width: 960px)  {
+
+.container1 { /*for index.html*/
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    }
+    
+    .container2 { /*for index.html*/
+  display: grid;
+  grid-template-columns:auto 1fr 25%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+    }
+    
+  .container3 { /*for index.html*/
+  display: grid;
+  grid-template-columns:auto 1fr 1.5fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header header header"
+    "nav main top"
+    "nav main middle"
+    "nav main bottom"
+    "footer footer footer";
+    }
+    
+.container4 {
+display:grid;
+grid-template-columns:auto 1fr;
+grid-template-areas:
+"header header"
+"nav main"
+"fig2 fig2"
+"footer footer";
+}
+.nestedgrid{
+display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-areas:
+"section fig1";
+}
+
+.nestedgrid2{
+  display:grid;
+grid-template-columns:1fr 1fr;
+grid-template-areas:
+"section fig1";
+}
+.homegrid {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-areas:
+  "homeA homeA homeA"
+  "homeB homeC homeD";
+}
+}
